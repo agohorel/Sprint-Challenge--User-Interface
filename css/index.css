@@ -349,6 +349,57 @@ footer nav a {
   margin-bottom: 50px;
 }
 
+/* CONTACT PAGE */
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 153px;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(245, 94, 12, 0.75),
+      rgba(12, 109, 245, 0.5)
+    ),
+    url("../img/jumbo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
+}
+
+.contact-header h1 {
+  color: white;
+  font-size: 60px;
+  margin: 0;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 230px;
+}
+
+.contact-form label {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+textarea {
+  background: #ccc;
+  border: none;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
 /* ANIMATIONS */
 
 @keyframes fadeIn {
@@ -386,35 +437,35 @@ footer nav a {
   }
 
   .top-content .text-container {
-      width: 100%;
+    width: 100%;
   }
 
   .middle-content .boxes .box {
-      width: 100%;
-      margin: 10px 2.5%;
-      height: 75px;
+    width: 100%;
+    margin: 10px 2.5%;
+    height: 75px;
   }
 
   .bottom-content .text-container {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 
-@media only screen and (max-width: 500px){
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
+@media only screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    header img {
-        margin-bottom: 30px;
-    }
+  header img {
+    margin-bottom: 30px;
+  }
 
-    header nav {
-        width: 100%;
-    }
+  header nav {
+    width: 100%;
+  }
 
-    footer nav {
-        width: 100%;
-    }
+  footer nav {
+    width: 100%;
+  }
 }

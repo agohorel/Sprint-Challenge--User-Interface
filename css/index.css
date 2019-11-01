@@ -342,6 +342,12 @@ footer nav a {
   padding: 8px 22px;
   font-weight: bold;
   margin-bottom: 20px;
+  transition: 0.2s ease-out all;
+}
+
+.btn:hover {
+  background: #333;
+  color: white;
 }
 
 .about-footer .text-container {
@@ -384,7 +390,8 @@ footer nav a {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin-bottom: 230px;
+  margin-bottom: 140px;
+  transition: .3s ease-in-out all;
 }
 
 .contact-form label {
@@ -398,6 +405,17 @@ textarea {
   border: none;
   padding: 5px;
   margin-bottom: 20px;
+}
+
+.contact-form input:last-of-type {
+  width: 34%;
+  transition: 0.2s ease-out all;
+}
+
+.contact-form input:last-of-type:hover {
+  cursor: pointer;
+  background: black;
+  color: white;
 }
 
 /* ANIMATIONS */
@@ -426,6 +444,10 @@ textarea {
   .container {
     width: 90%;
   }
+
+  .contact-wrapper form {
+    width: 75%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -448,6 +470,10 @@ textarea {
 
   .bottom-content .text-container {
     margin-bottom: 30px;
+  }
+
+  .contact-wrapper form {
+    width: 100%;
   }
 }
 

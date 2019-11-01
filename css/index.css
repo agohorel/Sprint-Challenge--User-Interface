@@ -76,7 +76,12 @@ header {
 header nav {
     display: flex;
     flex-basis: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+header nav a {
+    font-size: 14px;
+    font-weight: 600;
 }
 
 a {
@@ -100,17 +105,17 @@ a {
 }
 
 .top-content > img {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
+}
+
+.text-container {
+    font-weight: bold;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
-}
-
-.text-container h2 {
-    font-weight: bold;
 }
 
 .middle-content {
@@ -121,6 +126,7 @@ a {
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 .middle-content .boxes {
@@ -182,6 +188,7 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* ABOUT PAGE */
@@ -220,6 +227,7 @@ footer nav a {
     border: 2px solid black;
     border-radius: 10px;
     padding: 8px 22px;
+    font-weight: bold;
 }
 
 .about-footer .text-container {

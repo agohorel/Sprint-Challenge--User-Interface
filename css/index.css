@@ -180,7 +180,7 @@ a {
 .container {
   width: 800px;
   margin: 0 auto;
-  animation: fadeIn .25s ease-in-out forwards;
+  animation: fadeIn 0.25s ease-in-out forwards;
 }
 
 .top-content {
@@ -193,6 +193,7 @@ a {
 
 .top-content > img {
   margin-bottom: 25px;
+  width: 100%;
 }
 
 .text-container {
@@ -231,7 +232,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: fadeIn,grow 1s ease-in-out forwards;
+  animation: fadeIn, grow 1s ease-in-out forwards;
 }
 
 .middle-content .boxes .box1 {
@@ -305,6 +306,10 @@ footer nav a {
   border-bottom: 1px dashed black;
 }
 
+.about-header img {
+  width: 100%;
+}
+
 .about-header .text-container {
   padding: 2%;
 }
@@ -347,11 +352,69 @@ footer nav a {
 /* ANIMATIONS */
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes grow {
-  from { transform: scale(0); }
-  to { transform: scale(1); }
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 850px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .top-content,
+  .grid,
+  .bottom-content,
+  .boxes {
+    flex-direction: column;
+  }
+
+  .top-content .text-container {
+      width: 100%;
+  }
+
+  .middle-content .boxes .box {
+      width: 100%;
+      margin: 10px 2.5%;
+      height: 75px;
+  }
+
+  .bottom-content .text-container {
+      margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        margin-bottom: 30px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    footer nav {
+        width: 100%;
+    }
 }
